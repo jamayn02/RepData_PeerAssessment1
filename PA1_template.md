@@ -69,11 +69,11 @@ The total number of missing values in the dataset is:
 
 
 ```r
-sum(!is.na(data$steps))
+sum(is.na(data$steps))
 ```
 
 ```
-## [1] 15264
+## [1] 2304
 ```
 
 The missing data values will now be filled in with the mean number of steps taken (averaged across all days) for that 5 minute interval.
@@ -128,29 +128,3 @@ print(g)
 ```
 
 ![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10.png) 
-=======
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
-
-
-## Loading and preprocessing the data
-
-
-
-## What is mean total number of steps taken per day?
-
-
-
-## What is the average daily activity pattern?
-
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
->>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270

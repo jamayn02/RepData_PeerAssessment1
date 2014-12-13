@@ -49,7 +49,7 @@ Avedaily2[1,c(1,2)]
 The total number of missing values in the dataset is:
 
 ```{r}
-sum(!is.na(data$steps))
+sum(is.na(data$steps))
 ```
 
 The missing data values will now be filled in with the mean number of steps taken (averaged across all days) for that 5 minute interval.
@@ -92,29 +92,3 @@ Avedaily2$Time <- strptime(Avedaily2$Time, format = "%H%M")
 g <- ggplot(Avedaily2, aes(Time, steps))+geom_line()+facet_grid(dayType~.)+scale_x_datetime(labels = date_format("%H:%M"))
 print(g)
 ```
-=======
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
-
-
-## Loading and preprocessing the data
-
-
-
-## What is mean total number of steps taken per day?
-
-
-
-## What is the average daily activity pattern?
-
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
->>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270
