@@ -1,9 +1,5 @@
----
-title: "Reproducible Research: Programming Assignment 1"
-output: html_document
----
 
-
+# Reproducible Research: Programming Assignment 1
 
 ##Loading and preprocessing the data
 
@@ -132,3 +128,29 @@ print(g)
 ```
 
 ![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10.png) 
+=======
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
+
+
+## Loading and preprocessing the data
+
+
+
+## What is mean total number of steps taken per day?
+
+
+
+## What is the average daily activity pattern?
+
+
+
+## Imputing missing values
+
+
+
+## Are there differences in activity patterns between weekdays and weekends?
+>>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270
